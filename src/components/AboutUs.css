@@ -1,0 +1,134 @@
+
+h2 {
+  font-family: "Times New Roman", serif;
+}
+
+p {
+  font-size: 20px;
+  color: #444;
+}
+
+.btn-outline-dark {
+  width: 50px;
+  height: 50px;
+  font-size: 1.2rem;
+}
+.building-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.text-section {
+  background-color: #f8f8f8;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+
+.subtitle {
+  color: #d67d48;
+  letter-spacing: 1px;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.list-unstyled{
+  color:'#b2b2b2'
+}
+
+.feature-list li {
+  margin-bottom: 10px;
+}
+
+.award-card {
+  position: relative;
+  width: 100%;
+  height: auto; /* Make sure the height adjusts to the content */
+  overflow: visible; /* Allow overflow content to be visible */
+}
+
+.ventilit {
+  color: #004aad;
+  font-weight: bold;
+}
+.award-image {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  object-fit: contain; 
+}
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background: url("https://www.thewadhwagroup.com/wp-content/uploads/2024/05/venue-52.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  /* margin-top: 1000px; */
+  padding: 20px;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-section {
+  padding: 50px;
+  background: transparent;
+  text-align: center;
+}
+
+.form-section form {
+  max-width: 700px;
+  margin: auto;
+}
+
+
+.main-image {
+  width: 100%;
+  max-width: 500px; /* Default max width */
+}
+
+.overlay-image {
+  position: absolute;
+  width: 65%;
+  top: 25%;
+  left: 65%;
+  transform: translateX(-50%);
+  border: 5px solid #d08c60;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .main-image {
+    max-width: 350px; 
+  }
+
+  .overlay-image {
+    width: 50%; 
+    top: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-image {
+    max-width: 280px; 
+  }
+
+  .overlay-image {
+    width: 45%;
+    top: 45%;
+  }
+}

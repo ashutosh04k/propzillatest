@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Aboutus.css";
+import "./AboutUs.css";
 import { ArroIcon } from "../assets/svg";
 
 const Hearts = () => {

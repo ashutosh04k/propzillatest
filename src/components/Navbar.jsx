@@ -15,26 +15,26 @@ const Navbar = () => {
         <div className="container-fluid d-flex justify-content-between align-items-center w-100">
 
           {/* Left Side (Search + Links) */}
-          <div className="d-none d-md-flex align-items-center flex-grow-1" style={{ letterSpacing: "0.2em" }}>
+          <div className="d-none d-md-flex align-items-center" style={{ letterSpacing: "0.2em"}}>
             <div className="me-4 d-none d-lg-block">
               <SearchIcon />
             </div>
+            <div className="d-flex ms-4 gap-4">
             {["HOME", "ABOUT US", "DESIGN"].map((item, index) => (
               <a key={index} className={`nav-link text-white position-relative me-4 d-none d-md-block ${active === item ? "active-link" : ""}`}
-                href="#"
-                onClick={() => setActive(item)}>
+              href="#"
+              onClick={() => setActive(item)}>
                 {item}
               </a>
             ))}
+            </div>
           </div>
 
-          {/* Center (Logo) */}
           <div className="text-center mx-4">
             <img src="https://www.thewadhwagroup.com/wp-content/uploads/2025/02/TWG-LOGO-white.png" alt="Logo" style={{ height: "60px" }} />
           </div>
 
-          {/* Right Side (Links + Hamburger) */}
-          <div className="d-flex align-items-center flex-grow-1 justify-content-end" style={{ letterSpacing: "0.2em" }}>
+          <div className="d-flex align-items-center justify-content-end gap-4" style={{ letterSpacing: "0.2em"}}>
             {["RESIDENTIAL", "COMMERCIAL", "TOWNSHIP", "REDEVELOPMENT"].map((item, index) => (
               <a key={index} className={`nav-link text-white position-relative me-3 d-none d-lg-block ${active === item ? "active-link" : ""}`}
                 href="#"
